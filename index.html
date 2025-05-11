@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Flowchart Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/python/python.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/dracula.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.6/js/jsplumb.min.js"></script>
+</head>
+<body>
+    <div class="left-panel">
+        <h2 style="text-align: center;">Python Flowchart Generator</h2>
+    </div>
+    <div class="split-view">
+        <div class="editor-pane">
+            <textarea id="codeInput" placeholder="Enter your Python code here..."></textarea>
+            <button id="generateButton">Generate Flowchart</button>
+        </div>
+        <div class="divider"></div>
+        <div class="flowchart-pane">
+            <h2 id="flowchartHeading">Output Flowchart</h2>
+            <div id="flowchart" class="responsive-container"></div>
+        </div>
+    </div>
+    <div class="examples-sidebar">
+        <div class="toggle-button">☰</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
